@@ -12,7 +12,7 @@ export const store = configureStore({
 
 store.subscribe(() => {
   try {
-    localStorage.setItem('gsb64:haccp-platform', JSON.stringify(store.getState().haccp))
+    localStorage.setItem('gsb64:haccp-platform:v2', JSON.stringify(store.getState().haccp))
   } catch {
     // The app remains usable when browser storage is unavailable.
   }
